@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class Ex2520CountNegativeMatrix {
+public class Ex1351CountNegativeMatrix {
 	public int find(int[][] arr,int limit1,int limit2) {
 		int count=0;
 		for(int i=0;i<limit1;i++) {
@@ -29,7 +29,7 @@ public class Ex2520CountNegativeMatrix {
 			}
 		}
 		scan.close();
-		Ex2520CountNegativeMatrix objMay24=new Ex2520CountNegativeMatrix();
+		Ex1351CountNegativeMatrix objMay24=new Ex1351CountNegativeMatrix();
 		System.out.print("Number of negative numbers is: ");
 		System.out.println(objMay24.find(arr,limit1,limit2));
 		

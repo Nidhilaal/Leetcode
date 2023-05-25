@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 //function to find the count of digits which can exactly divide the given number
-public class Ex1351CountTheDigits {
+public class Ex2520CountTheDigits {
 	public int divide(int num) {
 		int value=num;
 		int count=0;
@@ -21,7 +21,7 @@ public class Ex1351CountTheDigits {
 		System.out.println("Enter the number: ");
 		int num=scanner.nextInt();
 		scanner.close();
-		Ex1351CountTheDigits objCountTheDigits=new Ex1351CountTheDigits();
+		Ex2520CountTheDigits objCountTheDigits=new Ex2520CountTheDigits();
 		System.out.println("count of the digits is: "+objCountTheDigits.divide(num));
 		
 	}
