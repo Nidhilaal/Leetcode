@@ -1,4 +1,4 @@
-package array;
+package solutions;
 
 import java.util.Scanner;
 //function to find the count of digits which can exactly divide the given number
