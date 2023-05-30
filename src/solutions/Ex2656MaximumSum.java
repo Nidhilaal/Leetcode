@@ -13,7 +13,7 @@ public class Ex2656MaximumSum {
 		}
 		int result=0;
 		while(k>0) {
-			result=arr[max]+1;
+			result=result+arr[max];
 			arr[max]=arr[max]+1;
 			k--;
 		}
