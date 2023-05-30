@@ -1,15 +1,20 @@
 package solutions;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex2656MaximumSum {
 	public int sum(int[]arr,int k) {
-		Arrays.sort(arr);
+		int max=0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[max]<arr[i]) {
+				max=i;
+			}
+			
+		}
 		int result=0;
 		while(k>0) {
-			result=result+arr[arr.length-1];
-			arr[arr.length-1]=arr[arr.length-1]+1;
+			result=arr[max]+1;
+			arr[max]=arr[max]+1;
 			k--;
 		}
 		return result;
