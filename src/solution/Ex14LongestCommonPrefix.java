@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Ex14LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
-        int i=0;
+        		int i=0;
 				int j=0;
 				String s="";
 				while(i<strs[0].length() && j<strs.length-1) {
 					if(strs[j].charAt(i)==strs[j+1].charAt(i)) {
 						s=s+strs[j].charAt(i);
 						j++;
+					}else if(strs.length==1) {
+						s=s+strs[0].charAt(i);	
 					}
 					i++;		
 				}					 
-				return s;
+				return strs.length==1?strs[0].substring(0,strs[0].length()-1):s;
     }
 
 	public static void main(String[] args) {
