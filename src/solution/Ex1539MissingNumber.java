@@ -24,6 +24,7 @@ public class Ex1539MissingNumber {
 		System.out.println("Enter the index of the missing number: ");
 		int k=scan.nextInt();
 		scan.close();
+		
 		Ex1539MissingNumber objNumber=new Ex1539MissingNumber();
 		System.out.println("The kth missing number is: "+ objNumber.find(arr,k));
 	}
