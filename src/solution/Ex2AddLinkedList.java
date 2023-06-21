@@ -21,8 +21,7 @@ public class Ex2AddLinkedList {
 			if(l1!=null) {
 				sum+=l1.val;
 				l1=l1.next;	
-			}
-			 
+			}		
 
 			if(l2!=null) {
 				sum+=l2.val;
@@ -35,7 +34,7 @@ public class Ex2AddLinkedList {
 		if(carry!=0){
 				head.next=new ListNode(carry,null);
 		}
-		return temp.next;        
+		return temgip.next;        
 	 
 	}
 }
